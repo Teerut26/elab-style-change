@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "ElabStyleChange",
+    "description": "Change the style of the elab page",
+    "version": "0.0.1",
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["script.js","./node_modules/jquery/dist/jquery.js"],
+        "css": ["styles.css"]
+      }
+    ]
+}
